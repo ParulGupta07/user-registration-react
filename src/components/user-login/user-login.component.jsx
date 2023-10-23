@@ -59,7 +59,7 @@ const UserLogin = () => {
         <div className="sign-up-form">
             <section className="container">
                 <div className="left-container">
-                    <h3 className="sign-up">Already registered?Kindly login here..!!</h3>
+                    <h3 className="sign-up">Login</h3>
                     <form>
                         <div className="input">
                             <img className="input-img" src={emailImg} />

@@ -64,12 +64,11 @@ const UserSignUp = () => {
                 else {
                     users.push(signUpData);
                     console.log(users);
+                    localStorage.setItem("userKaPrivateData", JSON.stringify(users));
+                    localStorage.setItem("loginKiaHuaUser", JSON.stringify([signUpData]));
+                    navigate('/home');
                 }
             }
-
-            localStorage.setItem("userKaPrivateData", JSON.stringify(users));
-            localStorage.setItem("loginKiaHuaUser", JSON.stringify([signUpData]));
-            navigate('/home');
         }
     }
 
